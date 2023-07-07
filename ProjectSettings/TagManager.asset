@@ -8,11 +8,12 @@ TagManager:
   - Goal
   - Hazard
   - Manager
+  - Jump
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Runners
   - Water
   - UI
   - 

@@ -36,7 +36,7 @@ public class RunnerSpawner : MonoBehaviour
     void Update()
     {
         // If spawner is not currently in use...
-        if (isSpawning == false)
+        if (isSpawning == false && gameManager.runnerCount > 0)
         {
             SpawnRunner();                                  // Spawn a runner
             spawnTimer = Random.Range(minTime, maxTime);    // Set a random timer
