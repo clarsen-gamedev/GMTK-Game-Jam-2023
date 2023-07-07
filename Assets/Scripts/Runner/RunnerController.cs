@@ -13,8 +13,10 @@ public class RunnerController : MonoBehaviour
     #region Private Variables
     GameManager gameManager;    // Reference to the Game Manager game object
     Vector3 move;               // Direction the runner moves in
+    Vector3 climb;              // Direction the runner climbs
 
-    float speed;    // Speed of the runner
+    bool climbingLadder;    // If climbing a ladder
+    float speed;            // Speed of the runner
     #endregion
 
     #region Functions
@@ -22,15 +24,26 @@ public class RunnerController : MonoBehaviour
     void Start()
     {
         // Initialize variables
-        move = new Vector3(-1, 0);      // Move runner along right along x-axis
-        speed = Random.Range(3, 6);     // Pick a random speed for the runner to move at
+        move = new Vector3(-1, 0);      // Move runner left along x-axis
+        climb = new Vector3(0, 1);      // Move runner up along y-axis
+        speed = Random.Range(3, 10);    // Pick a random speed for the runner to move at
+        climbingLadder = false;         // Runner starts off ladder
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Move runner forward
-        transform.position += move * speed * Time.deltaTime;    // Move the obstacle down the path
+        // Move runner forward when grounded
+        if (GetComponent<Rigidbody2D>().velocity.y == 0 && climbingLadder == false)
+        {
+            transform.position += move * speed * Time.deltaTime;    // Move the runner left
+        }
+
+        // Move runner up when climbing
+        else if (climbingLadder == true)
+        {
+            transform.position += climb * 2 * Time.deltaTime;   // Move the up the ladder
+        }
     }
 
     // Check what the runner collides with
@@ -50,11 +63,27 @@ public class RunnerController : MonoBehaviour
             Debug.Log("Runner was killed by hazard");
         }
 
-        // If a ruunner hits a jump trigger
+        // If a runner hits a jump trigger
         else if (collision.tag == "Jump")
         {
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 5, ForceMode2D.Impulse);
-            GetComponent<Rigidbody2D>().AddForce(Vector2.left * 2, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 7, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.left * 5, ForceMode2D.Impulse);
+        }
+
+        // If a runner hits a ladder trigger
+        else if (collision.tag == "Ladder")
+        {
+            climbingLadder = true;
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 7, ForceMode2D.Impulse);
+            Debug.Log("Ladder");
+        }
+
+        // If a runner hits a ladder jump trigger
+        else if (collision.tag == "LadderJump")
+        {
+            //GetComponent<Rigidbody2D>().AddForce(Vector2.up * 3, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.left * 3, ForceMode2D.Impulse);
+            climbingLadder = false;
         }
     }
     #endregion

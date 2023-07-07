@@ -9,6 +9,8 @@ TagManager:
   - Hazard
   - Manager
   - Jump
+  - Ladder
+  - LadderJump
   layers:
   - Default
   - TransparentFX
