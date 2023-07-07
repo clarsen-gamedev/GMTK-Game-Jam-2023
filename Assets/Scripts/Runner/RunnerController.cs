@@ -1,6 +1,6 @@
 // Name: RunnerController.cs
 // Author: Connor Larsen
-// Date: 06/17/2023
+// Date: 07/07/2023
 // Description: Script which controls the runners' actions
 
 using System.Collections;
@@ -11,7 +11,8 @@ using UnityEngine;
 public class RunnerController : MonoBehaviour
 {
     #region Private Variables
-    Vector3 move;   // Direction the runner moves in
+    GameManager gameManager;    // Reference to the Game Manager game object
+    Vector3 move;               // Direction the runner moves in
 
     float speed;    // Speed of the runner
     #endregion
