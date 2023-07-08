@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
 {
     #region Public and Serialized Variables
     [Header("Audio")]
-    //[SerializeField] AudioClip levelMusic;  // Background music for the level
     [SerializeField] AudioClip menuSelect;  // Sound used when clicking a menu button
     [SerializeField] AudioClip trapSelect;  // Sound used when clicking a trap button
     [SerializeField] AudioClip pauseGame;   // Sound used when pausing the game
