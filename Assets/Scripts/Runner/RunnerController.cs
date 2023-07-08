@@ -10,7 +10,8 @@ using UnityEngine;
 
 public class RunnerController : MonoBehaviour
 {
-    #region Serialized Variables
+    #region Public and Serialized Variables
+    public bool isDead;             // If the runner is dead
     [SerializeField] Animator anim; // Reference to the animator for the sprite
     #endregion
 
@@ -34,6 +35,7 @@ public class RunnerController : MonoBehaviour
         climb = new Vector3(0, 1);      // Move runner up along y-axis
         speed = Random.Range(3, 10);    // Pick a random speed for the runner to move at
         isWalking = false;              // Runner starts off idle
+        isDead = false;                 // Runner starts off alive
         climbingLadder = false;         // Runner starts off ladder
 
         // Do they skip the ladder?
@@ -55,7 +57,7 @@ public class RunnerController : MonoBehaviour
     void Update()
     {
         // Move runner forward when grounded
-        if (GetComponent<Rigidbody2D>().velocity.y == 0 && climbingLadder == false)
+        if (GetComponent<Rigidbody2D>().velocity.y == 0 && climbingLadder == false && isDead == false)
         {
             anim.SetBool("isWalking", true);
             transform.position += move * speed * Time.deltaTime;    // Move the runner left
@@ -63,6 +65,11 @@ public class RunnerController : MonoBehaviour
         else
         {
             anim.SetBool("isWalking", false);
+        }
+
+        if (isDead)
+        {
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         }
     }
 
@@ -80,7 +87,8 @@ public class RunnerController : MonoBehaviour
         // If a runner hits a hazard...
         else if (collision.tag == "Hazard")
         {
-            Destroy(gameObject);
+            GetComponent<BoxCollider2D>().enabled = false;
+            anim.SetTrigger("Death");
             gameManager.runnerKillCount++;
             gameManager.UpdateRunnerKillCount();
         }
