@@ -88,7 +88,8 @@ public class RunnerController : MonoBehaviour
         // If a runner hits a stair jump trigger
         else if (collision.tag == "Stair")
         {
-            
+            transform.position += new Vector3(0, 2f); // Move runner up
+            transform.position += new Vector3(-0.5f, 0); // Move runner left
         }
     }
     #endregion

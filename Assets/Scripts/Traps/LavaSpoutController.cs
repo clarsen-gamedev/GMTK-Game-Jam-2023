@@ -1,15 +1,9 @@
-// Name: CrushPanelController.cs
-// Author: Connor Larsen
-// Date: 07/07/2023
-// Description: Controls the function of the Crush Panel trap
-
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CrushPanelController : MonoBehaviour
+public class LavaSpoutController : MonoBehaviour
 {
     #region Serialized Variables
     [SerializeField] Image cooldownImage;   // Image for the cooldown bar
@@ -18,7 +12,7 @@ public class CrushPanelController : MonoBehaviour
     #endregion
 
     #region Private Variables
-    Animator anim;          // Reference to the animator controller of the Crush Panel
+    Animator anim;          // Reference to the animator controller of the trap
 
     bool cooldownActive;    // If the trap needs a cooldown
     float timer;            // Timer for the cooldown
