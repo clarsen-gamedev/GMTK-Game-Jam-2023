@@ -1,4 +1,4 @@
-// Name: SpikeController.cs
+// Name: TrapController.cs
 // Author: Connor Larsen
 // Date: 07/07/2023
 // Description: Controls the function of the Crush Panel trap
@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpikeController : MonoBehaviour
+public class TrapController : MonoBehaviour
 {
     #region Serialized Variables
     [SerializeField] Image cooldownImage;   // Image for the cooldown bar
@@ -18,7 +18,7 @@ public class SpikeController : MonoBehaviour
     #endregion
 
     #region Private Variables
-    Animator anim;          // Reference to the animator controller of the trap
+    Animator anim;          // Reference to the animator controller of the Crush Panel
 
     bool cooldownActive;    // If the trap needs a cooldown
     float timer;            // Timer for the cooldown

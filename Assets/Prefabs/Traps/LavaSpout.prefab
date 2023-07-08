@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3528048494954157459}
   - component: {fileID: 8973693670249470268}
   - component: {fileID: 6310454397520638923}
-  - component: {fileID: 4226261137046658811}
+  - component: {fileID: 5706022006558009436}
   m_Layer: 0
   m_Name: LavaSpout
   m_TagString: Hazard
@@ -153,7 +153,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4226261137046658811
+--- !u!114 &5706022006558009436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6712814107298988771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b26eaa1cf9f8e9f4291f8c6ae40a0f6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownImage: {fileID: 0}
