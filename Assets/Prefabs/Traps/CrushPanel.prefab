@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 365280793574222663}
   - component: {fileID: 1269886986493074983}
   - component: {fileID: 7801559045820812902}
-  - component: {fileID: 6828732339447042417}
+  - component: {fileID: 1417470925384050830}
   m_Layer: 0
   m_Name: CrushPanel
   m_TagString: Untagged
@@ -338,7 +338,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6828732339447042417
+--- !u!114 &1417470925384050830
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -347,6 +347,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5386461829562024967}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d28c6728be495b48926d5081ee6795c, type: 3}
+  m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cooldownImage: {fileID: 0}
+  cooldown: 5
