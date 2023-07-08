@@ -81,9 +81,14 @@ public class RunnerController : MonoBehaviour
         // If a runner hits a ladder jump trigger
         else if (collision.tag == "LadderJump")
         {
-            //GetComponent<Rigidbody2D>().AddForce(Vector2.up * 3, ForceMode2D.Impulse);
-            GetComponent<Rigidbody2D>().AddForce(Vector2.left * 3, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.left * 2, ForceMode2D.Impulse);
             climbingLadder = false;
+        }
+
+        // If a runner hits a stair jump trigger
+        else if (collision.tag == "Stair")
+        {
+            
         }
     }
     #endregion
