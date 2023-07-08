@@ -1,28 +1,25 @@
-// Name: TrapController.cs
+// Name: SingleUseTrapController.cs
 // Author: Connor Larsen
-// Date: 07/07/2023
-// Description: Controls the function of the traps
+// Date: 07/08/2023
+// Description: Controls the function of the traps with no cooldown
 
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TrapController : MonoBehaviour
+public class SingleUseTrapController : MonoBehaviour
 {
     #region Serialized Variables
     [SerializeField] Button button;         // Button used to activate the trap
-    [SerializeField] Image cooldownImage;   // Image for the cooldown bar
-
     [SerializeField] float cooldown = 5f;   // Cooldown time for the trap
     #endregion
 
     #region Private Variables
-    Animator anim;          // Reference to the animator controller of the Crush Panel
+    Animator anim;  // Reference to the animator controller of the Crush Panel
 
-    bool cooldownActive;    // If the trap needs a cooldown
-    float timer;            // Timer for the cooldown
+    bool trapUsed;  // If the trap has been used
+    float timer;    // Timer for the cooldown
     #endregion
 
     #region Functions
@@ -39,25 +36,19 @@ public class TrapController : MonoBehaviour
     {
         if (timer <= cooldown)
         {
-            timer += Time.deltaTime;                        // Increase timer
-            cooldownImage.fillAmount = (timer / cooldown);  // Fill the progress bar
-        }
-        else
-        {
-            cooldownActive = false;     // Cooldown is completed
-            button.interactable = true; // Enable the button
+            timer += Time.deltaTime;    // Increase timer
         }
     }
 
     // Activate the trap
     public void ActivateTrap()
     {
-        if (cooldownActive == false)
+        if (trapUsed == false)
         {
             anim.SetTrigger("ActivateTrap");    // Activate the trap
             timer = 0f;                         // Reset timer
             button.interactable = false;        // Disable the button
-            cooldownActive = true;              // Trap needs to cooldown
+            trapUsed = true;                    // Trap has been used
         }
     }
     #endregion
