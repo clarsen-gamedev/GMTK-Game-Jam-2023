@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89ad3578dc6e5bb44aeb7475c8b6683e
+guid: f4133815b2558664e860a5fa4601fef5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,15 +37,15 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -121,7 +121,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: lavaSpout_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 621
+        width: 308
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718afe2210c86b740b6b4ae305b91b8d
+      internalID: 1657218234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaSpout_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 195
+        width: 482
+        height: 853
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9480951acbd33664da0f2d10838ef940
+      internalID: -1538462016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaSpout_3
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 60
+        width: 459
+        height: 988
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274ee5a4cae4cc543b969e42aed9cfbf
+      internalID: -215501421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaSpout_4
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 0
+        width: 645
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e27275fbce37e47ba108533acf35dd
+      internalID: 1218653224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaSpout_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 468
+        height: 597
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb7d9c7b4cce2b40802ccd30ab39b5f
+      internalID: 823460623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +237,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lavaSpout_0: 1657218234
+      lavaSpout_1: 823460623
+      lavaSpout_2: -1538462016
+      lavaSpout_3: -215501421
+      lavaSpout_4: 1218653224
+      trap_lavaSpout_Spritesheet_1: -1486077802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
