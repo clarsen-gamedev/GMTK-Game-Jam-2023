@@ -1,6 +1,6 @@
 // Name: SingleUseTrapController.cs
 // Author: Connor Larsen
-// Date: 07/07/2023
+// Date: 07/08/2023
 // Description: Controls the function of the traps with no cooldown
 
 using System.Collections;
