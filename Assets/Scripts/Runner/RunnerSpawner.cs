@@ -36,7 +36,7 @@ public class RunnerSpawner : MonoBehaviour
     void Update()
     {
         // If spawner is not currently in use...
-        if (isSpawning == false && gameManager.runnerCount > 0)
+        if (isSpawning == false && gameManager.maxRunners > 0)
         {
             SpawnRunner();                                  // Spawn a runner
             spawnTimer = Random.Range(minTime, maxTime);    // Set a random timer
@@ -62,8 +62,8 @@ public class RunnerSpawner : MonoBehaviour
     void SpawnRunner()
     {
         GameObject newRunner = Instantiate(runner, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);    // Spawn the runner
-        gameManager.runnerCount--;                                                                                                      // Decrease runner count on spawn
-        gameManager.UpdateRunnerCount();                                                                                                // Update the runner count
+        gameManager.maxRunners--;                                                                                                      // Decrease runner count on spawn
+        gameManager.UpdateRunnerSpawnCount();                                                                                                // Update the runner count
     }
     #endregion
 }

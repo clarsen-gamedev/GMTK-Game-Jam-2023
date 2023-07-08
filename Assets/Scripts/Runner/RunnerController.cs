@@ -10,12 +10,18 @@ using UnityEngine;
 
 public class RunnerController : MonoBehaviour
 {
+    #region Serialized Variables
+    [SerializeField] Animator anim; // Reference to the animator for the sprite
+    #endregion
+
     #region Private Variables
     GameManager gameManager;    // Reference to the Game Manager game object
     Vector3 move;               // Direction the runner moves in
     Vector3 climb;              // Direction the runner climbs
 
+    bool isWalking;         // If the runner is walking
     bool climbingLadder;    // If climbing a ladder
+    bool skipLadder;        // Whether or not the runner skips the ladder check
     float speed;            // Speed of the runner
     #endregion
 
@@ -27,7 +33,22 @@ public class RunnerController : MonoBehaviour
         move = new Vector3(-1, 0);      // Move runner left along x-axis
         climb = new Vector3(0, 1);      // Move runner up along y-axis
         speed = Random.Range(3, 10);    // Pick a random speed for the runner to move at
+        isWalking = false;              // Runner starts off idle
         climbingLadder = false;         // Runner starts off ladder
+
+        // Do they skip the ladder?
+        int chance = Random.Range(1, 10);
+        if (chance <= 2)
+        {
+            skipLadder = true;
+        }
+        else
+        {
+            skipLadder = false;
+        }
+
+        // Grab reference to the game manager and animator
+        gameManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -36,13 +57,12 @@ public class RunnerController : MonoBehaviour
         // Move runner forward when grounded
         if (GetComponent<Rigidbody2D>().velocity.y == 0 && climbingLadder == false)
         {
+            anim.SetBool("isWalking", true);
             transform.position += move * speed * Time.deltaTime;    // Move the runner left
         }
-
-        // Move runner up when climbing
-        else if (climbingLadder == true)
+        else
         {
-            transform.position += climb * 2 * Time.deltaTime;   // Move the up the ladder
+            anim.SetBool("isWalking", false);
         }
     }
 
@@ -53,14 +73,16 @@ public class RunnerController : MonoBehaviour
         if (collision.tag == "Goal")
         {
             Destroy(gameObject);
-            Debug.Log("Runner made it to the end");
+            gameManager.runnerGoalCount++;
+            gameManager.UpdateRunnerGoalCount();
         }
 
         // If a runner hits a hazard...
         else if (collision.tag == "Hazard")
         {
             Destroy(gameObject);
-            Debug.Log("Runner was killed by hazard");
+            gameManager.runnerKillCount++;
+            gameManager.UpdateRunnerKillCount();
         }
 
         // If a runner hits a jump trigger
@@ -68,21 +90,34 @@ public class RunnerController : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * 7, ForceMode2D.Impulse);
             GetComponent<Rigidbody2D>().AddForce(Vector2.left * 5, ForceMode2D.Impulse);
+            anim.SetTrigger("Jumping");
         }
 
         // If a runner hits a ladder trigger
         else if (collision.tag == "Ladder")
         {
-            climbingLadder = true;
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 7, ForceMode2D.Impulse);
-            Debug.Log("Ladder");
+            if (skipLadder == false)
+            {
+                // Climb the ladder
+                climbingLadder = true;
+                GetComponent<Rigidbody2D>().gravityScale = 0f;
+                GetComponent<Rigidbody2D>().AddForce(Vector2.up * 7, ForceMode2D.Impulse);
+                anim.SetTrigger("Climbing");
+            }
         }
 
         // If a runner hits a ladder jump trigger
         else if (collision.tag == "LadderJump")
         {
+            GetComponent<Rigidbody2D>().gravityScale = 1f;
             GetComponent<Rigidbody2D>().AddForce(Vector2.left * 2, ForceMode2D.Impulse);
             climbingLadder = false;
+            anim.SetTrigger("Jumping");
+        }
+
+        else if (collision.tag == "LadderDown")
+        {
+            anim.SetTrigger("Climbing");
         }
 
         // If a runner hits a stair jump trigger

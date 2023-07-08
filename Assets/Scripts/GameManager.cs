@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] KeyCode pauseButton = KeyCode.Escape;  // Reference to the key responsible for pausing the game
 
     [Header("Game Systems")]
-    public int runnerCount = 100;   // Maximum number of runners that can spawn in the level
+    public int maxRunners = 100;    // Maximum number of runners that can spawn in the level
 
     [Header("UI")]
     [SerializeField] GameObject gameplayUI; // UI Screen for gameplay
@@ -30,10 +30,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject gameOverUI; // UI Screen for loss condition
     [SerializeField] GameObject victoryUI;  // UI Screen for win condition
     [SerializeField] Text runnerCountUI;    // UI element for the runner count
+    [SerializeField] Text runnerKillsUI;    // UI element for the runner kills
+    [SerializeField] Text runnerGoalsUI;    // UI element for the runner escapes
 
     // Hidden from inspector
     [HideInInspector] public enum UIScreens { GAME, PAUSE, GAMEOVER, VICTORY, NONE };   // Enum types for each type of screen
     [HideInInspector] public UIScreens currentScreen;                                   // Reference to the currently active screen
+
+    [HideInInspector] public int runnerCount;       // Number of runners that will spawn
+    [HideInInspector] public int runnerKillCount;   // Number of runners killed
+    [HideInInspector] public int runnerGoalCount;   // Number of runners that reached the goal
     #endregion
 
     #region Private Variables
@@ -108,11 +114,18 @@ public class GameManager : MonoBehaviour
     // Call this function to reinitialize the game
     public void ResetGame()
     {
-        // Reset the UI
-
         // Reset variables
+        runnerCount = maxRunners;
+        runnerKillCount = 0;
+        runnerGoalCount = 0;
 
-        // Reset camera position
+        // Reset the UI
+        UISwitch(UIScreens.GAME);
+        Time.timeScale = 1f;
+        isPaused = false;
+        UpdateRunnerSpawnCount();
+        UpdateRunnerKillCount();
+        UpdateRunnerGoalCount();
     }
 
     // Call this function to return to the title screen
@@ -193,9 +206,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
-        public void UpdateRunnerCount()
+    // Updates the runner spawn count UI
+    public void UpdateRunnerSpawnCount()
     {
-        runnerCountUI.text = "Runners Left: " + runnerCount;
+        runnerCountUI.text = "Runners Left: " + maxRunners;
+    }
+
+    // Updates the runner kill count UI
+    public void UpdateRunnerKillCount()
+    {
+        runnerKillsUI.text = "Runners Killed: " + runnerKillCount;
+    }
+
+    // Updates the runner goal count UI
+    public void UpdateRunnerGoalCount()
+    {
+        runnerGoalsUI.text = "Runners Escaped: " + runnerGoalCount;
     }
     #endregion
 }

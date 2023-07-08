@@ -12,6 +12,7 @@ TagManager:
   - Ladder
   - LadderJump
   - Stair
+  - LadderDown
   layers:
   - Default
   - TransparentFX
