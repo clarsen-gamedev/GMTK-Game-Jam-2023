@@ -30,6 +30,24 @@ public class CameraController : MonoBehaviour
         // Move the player based on player input
         transform.position += move * speed * Time.deltaTime;
 
+        // If the player clicks one of the snap buttons...
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            transform.position = new Vector3(-17, -12, -10);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            transform.position = new Vector3(-84, -12, -10);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            transform.position = new Vector3(-143, -12, -10);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            transform.position = new Vector3(-207, -12, -10);
+        }
+
         //if (GetComponent<Camera>().orthographicSize >= 2)
         //{
         //    GetComponent<Camera>().orthographicSize += -Input.mouseScrollDelta.y;
