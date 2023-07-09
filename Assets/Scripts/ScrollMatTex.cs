@@ -7,7 +7,7 @@ public class ScrollMatTex : MonoBehaviour
 	public GameObject quadGameObject;
 	private Renderer quadRenderer;
 
-	float scrollTexSpeed = 0.5f;
+	float scrollSpeed = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
