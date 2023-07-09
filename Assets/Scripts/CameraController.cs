@@ -30,14 +30,14 @@ public class CameraController : MonoBehaviour
         // Move the player based on player input
         transform.position += move * speed * Time.deltaTime;
 
-        if (GetComponent<Camera>().orthographicSize >=2)
-        {
-            GetComponent<Camera>().orthographicSize += -Input.mouseScrollDelta.y;
-        }
-        else
-        {
-            GetComponent<Camera>().orthographicSize = 2;
-        }
+        //if (GetComponent<Camera>().orthographicSize >= 2)
+        //{
+        //    GetComponent<Camera>().orthographicSize += -Input.mouseScrollDelta.y;
+        //}
+        //else
+        //{
+        //    GetComponent<Camera>().orthographicSize = 2;
+        //}
     }
     #endregion
 }

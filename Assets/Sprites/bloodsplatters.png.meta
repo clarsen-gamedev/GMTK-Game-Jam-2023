@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5f74a9367c9c1b4c956730862259898
+guid: a9b03c4345c3b9843931013632d216ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flamethrower_1
+      name: bloodsplatters_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2545
-        width: 1440
-        height: 1253
+        x: 2
+        y: 412
+        width: 336
+        height: 125
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b9866152c3314343af3f683d039d084
-      internalID: 554503972
+      spriteID: 8f3d8cfbe83e71a4a832374ebd7de6c4
+      internalID: -2129710753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flamethrower_0
+      name: bloodsplatters_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3792
-        width: 1440
-        height: 1251
+        x: 8
+        y: 252
+        width: 328
+        height: 155
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23cdcfbbe46bc5645958595ee7436a15
-      internalID: -1611377389
+      spriteID: 887f71549aa1d914b872a6cd58bfa3c4
+      internalID: -1151688949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flamethrower_2
+      name: bloodsplatters_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1272
-        width: 1440
-        height: 1278
+        x: 9
+        y: 6
+        width: 433
+        height: 237
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a25d4d9b2ba76c4ebe62a5d68c5450f
-      internalID: 1638172411
+      spriteID: 25e82ffc4916e22429ca34163320cdff
+      internalID: 292215959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flamethrower_3
+      name: bloodsplatters_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1440
-        height: 1252
+        x: 372
+        y: 203
+        width: 394
+        height: 323
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff48509ed9c586a48a637e7157c1dcac
-      internalID: 1443332307
+      spriteID: ebd19c64d979419429e19b0e14694b06
+      internalID: 1073233608
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      flamethrower_0: -1611377389
-      flamethrower_1: 554503972
-      flamethrower_2: 1638172411
-      flamethrower_3: 1443332307
+      bloodsplatters_0: -2129710753
+      bloodsplatters_1: -1151688949
+      bloodsplatters_2: 292215959
+      bloodsplatters_3: 1073233608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

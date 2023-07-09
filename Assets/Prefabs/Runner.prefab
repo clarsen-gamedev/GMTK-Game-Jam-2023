@@ -240,3 +240,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 043668244277f4e439efaded1f1bb299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blood: {fileID: 3304843778326447388, guid: 34a5c6c78e0075c47bcee58d2724662f, type: 3}

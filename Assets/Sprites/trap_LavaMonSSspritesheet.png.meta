@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5f74a9367c9c1b4c956730862259898
+guid: 7b002567cb7ff564bbf0bfd69983146c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flamethrower_1
+      name: lavaHandSmall_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2545
-        width: 1440
-        height: 1253
+        x: 35
+        y: 659
+        width: 275
+        height: 260
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b9866152c3314343af3f683d039d084
-      internalID: 554503972
+      spriteID: c1970ab4d0dfcae44b69180a14be8d72
+      internalID: -2121142588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flamethrower_0
+      name: lavaHandSmall_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3792
-        width: 1440
-        height: 1251
+        x: 365
+        y: 664
+        width: 160
+        height: 240
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23cdcfbbe46bc5645958595ee7436a15
-      internalID: -1611377389
+      spriteID: b4c2737584fa2db4f8d36c08b9e0c493
+      internalID: 467217631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flamethrower_2
+      name: lavaHandSmall_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1272
-        width: 1440
-        height: 1278
+        x: 585
+        y: 459
+        width: 290
+        height: 445
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a25d4d9b2ba76c4ebe62a5d68c5450f
-      internalID: 1638172411
+      spriteID: b26a0a1385f512542ae4e6b80c6e7a5c
+      internalID: 1516070101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flamethrower_3
+      name: lavaHandSmall_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1440
-        height: 1252
+        x: 860
+        y: 454
+        width: 320
+        height: 430
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff48509ed9c586a48a637e7157c1dcac
-      internalID: 1443332307
+      spriteID: c1e6084c79b49c4448f54c6f26f2b6bb
+      internalID: 835270301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaHandSmall_4
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 14
+        width: 320
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48bdea1d2db4bc44958233c4aabbb11
+      internalID: -868110850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaHandSmall_5
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 54
+        width: 400
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7b0f22a3926d140b855ccd78c22dab
+      internalID: 313392701
       vertices: []
       indices: 
       edges: []
@@ -217,10 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      flamethrower_0: -1611377389
-      flamethrower_1: 554503972
-      flamethrower_2: 1638172411
-      flamethrower_3: 1443332307
+      lavaHandSmall_0: -2121142588
+      lavaHandSmall_1: 467217631
+      lavaHandSmall_2: 1516070101
+      lavaHandSmall_3: 835270301
+      lavaHandSmall_4: -868110850
+      lavaHandSmall_5: 313392701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
