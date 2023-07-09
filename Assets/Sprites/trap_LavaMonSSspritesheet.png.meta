@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01ebbc8ab180c4c44a6e85abe1aebb8b
+guid: 7b002567cb7ff564bbf0bfd69983146c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,9 +106,148 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: lavaHandSmall_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 659
+        width: 275
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1970ab4d0dfcae44b69180a14be8d72
+      internalID: -2121142588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaHandSmall_1
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 664
+        width: 160
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c2737584fa2db4f8d36c08b9e0c493
+      internalID: 467217631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaHandSmall_2
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 459
+        width: 290
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26a0a1385f512542ae4e6b80c6e7a5c
+      internalID: 1516070101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaHandSmall_3
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 454
+        width: 320
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e6084c79b49c4448f54c6f26f2b6bb
+      internalID: 835270301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaHandSmall_4
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 14
+        width: 320
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48bdea1d2db4bc44958233c4aabbb11
+      internalID: -868110850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavaHandSmall_5
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 54
+        width: 400
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7b0f22a3926d140b855ccd78c22dab
+      internalID: 313392701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +258,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lavaHandSmall_0: -2121142588
+      lavaHandSmall_1: 467217631
+      lavaHandSmall_2: 1516070101
+      lavaHandSmall_3: 835270301
+      lavaHandSmall_4: -868110850
+      lavaHandSmall_5: 313392701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
