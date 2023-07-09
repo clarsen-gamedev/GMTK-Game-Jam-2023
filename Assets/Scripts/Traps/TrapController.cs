@@ -56,12 +56,19 @@ public class TrapController : MonoBehaviour
         if (cooldownActive == false)
         {
             anim.SetTrigger("ActivateTrap");            // Activate the trap
-            GetComponent<AudioSource>().clip = sound;   // Load sound
-            GetComponent<AudioSource>().Play();         // Play sound
             timer = 0f;                                 // Reset timer
             button.interactable = false;                // Disable the button
             cooldownActive = true;                      // Trap needs to cooldown
         }
     }
+
+    // Play trap sound
+    public void PlaySound()
+    {
+        GetComponent<AudioSource>().clip = sound;   // Load sound
+        GetComponent<AudioSource>().Play();         // Play sound
+    }
+
+
     #endregion
 }
