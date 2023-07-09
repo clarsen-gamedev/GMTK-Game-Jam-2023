@@ -136,6 +136,12 @@ public class RunnerController : MonoBehaviour
             transform.position += new Vector3(0, 2f); // Move runner up
             transform.position += new Vector3(-0.5f, 0); // Move runner left
         }
+
+        else if (collision.tag == "Launcher")
+        {
+            GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(Vector2.right * 150, ForceMode2D.Impulse);
+        }
     }
     #endregion
 }
