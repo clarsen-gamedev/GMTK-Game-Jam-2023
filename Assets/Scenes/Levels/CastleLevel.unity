@@ -305,7 +305,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2046,6 +2046,7 @@ GameObject:
   - component: {fileID: 247595102}
   - component: {fileID: 247595104}
   - component: {fileID: 247595103}
+  - component: {fileID: 247595105}
   m_Layer: 5
   m_Name: Text_RunnersKilled
   m_TagString: Untagged
@@ -2070,8 +2071,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -175}
-  m_SizeDelta: {x: 600, y: 50}
+  m_AnchoredPosition: {x: 350, y: -100}
+  m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247595103
 MonoBehaviour:
@@ -2086,7 +2087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.82052517, b: 0.3254717, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2094,12 +2095,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: f0a796415e256d440b8b9ad4b077a7df, type: 3}
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 69
+    m_MaxSize: 87
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2115,6 +2116,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247595101}
   m_CullTransparentMesh: 1
+--- !u!114 &247595105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247595101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &254138132
 GameObject:
   m_ObjectHideFlags: 0
@@ -4335,7 +4351,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5901,7 +5917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 67c3e62e7bb5f91499363fb88b2e8376, type: 3}
   button: {fileID: 1418110626}
   cooldownImage: {fileID: 373844825}
   cooldown: 3
@@ -5917,7 +5933,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7357,6 +7373,7 @@ GameObject:
   - component: {fileID: 826870802}
   - component: {fileID: 826870804}
   - component: {fileID: 826870803}
+  - component: {fileID: 826870805}
   m_Layer: 5
   m_Name: Text_RunnerCount
   m_TagString: Untagged
@@ -7379,10 +7396,10 @@ RectTransform:
   m_Father: {fileID: 2041470969}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -100}
-  m_SizeDelta: {x: 600, y: 50}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826870803
 MonoBehaviour:
@@ -7397,7 +7414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.82052517, b: 0.3254717, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7405,19 +7422,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: f0a796415e256d440b8b9ad4b077a7df, type: 3}
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 69
-    m_Alignment: 3
+    m_MaxSize: 87
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Runner Count: ###'
+  m_Text: '###'
 --- !u!222 &826870804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7426,6 +7443,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826870801}
   m_CullTransparentMesh: 1
+--- !u!114 &826870805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826870801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &828684067
 GameObject:
   m_ObjectHideFlags: 0
@@ -13898,6 +13930,7 @@ GameObject:
   - component: {fileID: 1636305885}
   - component: {fileID: 1636305887}
   - component: {fileID: 1636305886}
+  - component: {fileID: 1636305888}
   m_Layer: 5
   m_Name: Text_RunnersEscaped
   m_TagString: Untagged
@@ -13922,8 +13955,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 350, y: -250}
-  m_SizeDelta: {x: 600, y: 50}
+  m_AnchoredPosition: {x: 350, y: -200}
+  m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1636305886
 MonoBehaviour:
@@ -13938,7 +13971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.82052517, b: 0.3254717, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13946,12 +13979,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: f0a796415e256d440b8b9ad4b077a7df, type: 3}
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 69
+    m_MaxSize: 87
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -13967,6 +14000,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636305884}
   m_CullTransparentMesh: 1
+--- !u!114 &1636305888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636305884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1644333533
 GameObject:
   m_ObjectHideFlags: 0
@@ -14860,7 +14908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: db2c8917bc8174a4ea627d3fe254c17d, type: 3}
   button: {fileID: 659518707}
   cooldownImage: {fileID: 422541458}
   cooldown: 7
@@ -15603,7 +15651,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -15781,7 +15829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 67c3e62e7bb5f91499363fb88b2e8376, type: 3}
   button: {fileID: 404498008}
   cooldownImage: {fileID: 1927638668}
   cooldown: 10
@@ -15818,7 +15866,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16840,7 +16888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 30db3e80cc6ce7f4390472e481d46a60, type: 3}
   button: {fileID: 2010871524}
   cooldownImage: {fileID: 34712382}
   cooldown: 10
@@ -16901,7 +16949,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -18297,6 +18345,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1923053208}
     m_Modifications:
+    - target: {fileID: 1986585308680100457, guid: 94f3d5242a1ea434ba2b234809dee040, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5706022006558009436, guid: 94f3d5242a1ea434ba2b234809dee040, type: 3}
       propertyPath: button
       value: 
@@ -18615,7 +18667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: e2cb404f7eea87645b6f2a06f4a3e930, type: 3}
   button: {fileID: 736045711}
   cooldownImage: {fileID: 828684069}
   cooldown: 5
@@ -18682,6 +18734,10 @@ PrefabInstance:
     - target: {fileID: 5386461829562024967, guid: 47ca8ca37d7098b45a2fd75edd117d07, type: 3}
       propertyPath: m_Name
       value: CrushPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260670438161701289, guid: 47ca8ca37d7098b45a2fd75edd117d07, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18819,7 +18875,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
