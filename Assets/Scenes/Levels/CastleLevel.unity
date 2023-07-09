@@ -213,7 +213,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2121142588, guid: 7b002567cb7ff564bbf0bfd69983146c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 710973922}
   cooldownImage: {fileID: 2077491222}
-  cooldown: 5
+  cooldown: 3
 --- !u!1 &171261554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,7 +2379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1306011344}
   cooldownImage: {fileID: 997051127}
-  cooldown: 5
+  cooldown: 3
 --- !u!1 &301342436
 GameObject:
   m_ObjectHideFlags: 0
@@ -4026,7 +4026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1150121349}
   cooldownImage: {fileID: 515429579}
-  cooldown: 5
+  cooldown: 10
 --- !u!1 &498831275
 GameObject:
   m_ObjectHideFlags: 0
@@ -5413,7 +5413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1418110626}
   cooldownImage: {fileID: 373844825}
-  cooldown: 5
+  cooldown: 3
 --- !u!1 &682357771
 GameObject:
   m_ObjectHideFlags: 0
@@ -6490,7 +6490,7 @@ MonoBehaviour:
   m_Content: {fileID: 1034294107}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -14274,7 +14274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 659518707}
   cooldownImage: {fileID: 422541458}
-  cooldown: 5
+  cooldown: 7
 --- !u!1 &1824994571
 GameObject:
   m_ObjectHideFlags: 0
@@ -14811,7 +14811,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 2000677352, guid: 045602cee0d0f7244937c1dcf6cf385b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14837,7 +14837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1308872442}
   cooldownImage: {fileID: 1752380584}
-  cooldown: 5
+  cooldown: 3
 --- !u!61 &1860559803
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14999,7 +14999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 404498008}
   cooldownImage: {fileID: 1927638668}
-  cooldown: 5
+  cooldown: 10
 --- !u!95 &1877951756
 Animator:
   serializedVersion: 5
@@ -15226,7 +15226,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2121142588, guid: 7b002567cb7ff564bbf0bfd69983146c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15238,37 +15238,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1916928064
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1916928065}
-  m_Layer: 0
-  m_Name: CameraSnapPoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1916928065
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916928064}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.855217, y: -17.87709, z: -0.5701034}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1923053207
 GameObject:
   m_ObjectHideFlags: 0
@@ -15991,7 +15960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 2010871524}
   cooldownImage: {fileID: 34712382}
-  cooldown: 5
+  cooldown: 10
 --- !u!61 &2015128435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17357,6 +17326,10 @@ PrefabInstance:
       propertyPath: button
       value: 
       objectReference: {fileID: 881176789}
+    - target: {fileID: 5706022006558009436, guid: 94f3d5242a1ea434ba2b234809dee040, type: 3}
+      propertyPath: cooldown
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5706022006558009436, guid: 94f3d5242a1ea434ba2b234809dee040, type: 3}
       propertyPath: cooldownImage
       value: 
