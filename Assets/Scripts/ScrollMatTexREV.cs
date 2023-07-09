@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScrollMatTex : MonoBehaviour
+public class ScrollMatTexREV : MonoBehaviour
 {
 	public GameObject quadGameObject;
 	private Renderer quadRenderer;
 
-	float scrollSpeed = 0.05f;
+	float scrollSpeed = 0.01f;
     // Start is called before the first frame update
     void Start()
     {
