@@ -8952,7 +8952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 67c3e62e7bb5f91499363fb88b2e8376, type: 3}
   button: {fileID: 301135959}
   cooldownImage: {fileID: 301135958}
   cooldown: 3
@@ -22526,7 +22526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: db2c8917bc8174a4ea627d3fe254c17d, type: 3}
   button: {fileID: 1245885261}
   cooldownImage: {fileID: 1245885260}
   cooldown: 7
@@ -24018,7 +24018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 67c3e62e7bb5f91499363fb88b2e8376, type: 3}
   button: {fileID: 1458135956}
   cooldownImage: {fileID: 1458135955}
   cooldown: 10
@@ -26140,7 +26140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 30db3e80cc6ce7f4390472e481d46a60, type: 3}
   button: {fileID: 188433034}
   cooldownImage: {fileID: 188433033}
   cooldown: 10
@@ -28462,7 +28462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406428a2e6fbcb5449e27c061c429637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: e2cb404f7eea87645b6f2a06f4a3e930, type: 3}
   button: {fileID: 1157980281}
   cooldownImage: {fileID: 1157980280}
   cooldown: 5
