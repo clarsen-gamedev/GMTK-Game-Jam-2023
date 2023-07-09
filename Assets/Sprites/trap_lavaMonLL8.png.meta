@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9b03c4345c3b9843931013632d216ea
+guid: 21fca12255fb5e24599b2155e89c6df7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,91 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: bloodsplatters_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 412
-        width: 336
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f3d8cfbe83e71a4a832374ebd7de6c4
-      internalID: -2129710753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bloodsplatters_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 252
-        width: 328
-        height: 155
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 887f71549aa1d914b872a6cd58bfa3c4
-      internalID: -1151688949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bloodsplatters_2
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 6
-        width: 433
-        height: 237
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25e82ffc4916e22429ca34163320cdff
-      internalID: 292215959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bloodsplatters_3
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 203
-        width: 394
-        height: 323
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebd19c64d979419429e19b0e14694b06
-      internalID: 1073233608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -216,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      bloodsplatters_0: -2129710753
-      bloodsplatters_1: -1151688949
-      bloodsplatters_2: 292215959
-      bloodsplatters_3: 1073233608
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

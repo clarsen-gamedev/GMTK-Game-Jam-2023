@@ -9,6 +9,8 @@ using UnityEngine;
 
 public class RunnerDeath : MonoBehaviour
 {
+    [SerializeField] GameObject blood;
+
     public void Death()
     {
         Destroy(transform.parent.gameObject);
@@ -18,6 +20,7 @@ public class RunnerDeath : MonoBehaviour
     {
         transform.parent.gameObject.GetComponent<RunnerController>().isDead = true;
         transform.parent.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+        Instantiate(blood, transform.position, Quaternion.identity);
         GetComponent<SpriteRenderer>().sortingOrder = -5;
     }
 }
