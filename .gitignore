@@ -70,3 +70,24 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+*.png
+Assets/Button & UI/Button_Click_01.png
+Assets/Button & UI/Button_Click_01.png.meta
+Assets/Button & UI/Button_Click_02.png
+Assets/Button & UI/Button_Click_02.png.meta
+Assets/Button & UI/Button_Click_03.png
+Assets/Button & UI/Button_Click_03.png.meta
+Assets/Button & UI/Button_Hover_01.png
+Assets/Button & UI/Button_Hover_01.png.meta
+Assets/Button & UI/Button_Hover_02 1.png
+Assets/Button & UI/Button_Hover_02 1.png.meta
+Assets/Button & UI/Button_Hover_02.png
+Assets/Button & UI/Button_Hover_02.png.meta
+Assets/Button & UI/Button_Hover_03.png
+Assets/Button & UI/Button_Hover_03.png.meta
+Assets/Button & UI/Button_Idle_01.png
+Assets/Button & UI/Button_Idle_01.png.meta
+Assets/Button & UI/Button_Idle_02.png
+Assets/Button & UI/Button_Idle_02.png.meta
+Assets/Button & UI/Button_Idle_03.png
+Assets/Button & UI/Button_Idle_03.png.meta
