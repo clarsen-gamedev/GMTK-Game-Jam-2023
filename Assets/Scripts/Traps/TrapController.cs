@@ -12,6 +12,7 @@ using UnityEngine.UI;
 public class TrapController : MonoBehaviour
 {
     #region Serialized Variables
+    [SerializeField] AudioClip sound;       // Audio clip for the sound of the trap
     [SerializeField] Button button;         // Button used to activate the trap
     [SerializeField] Image cooldownImage;   // Image for the cooldown bar
 
@@ -54,10 +55,12 @@ public class TrapController : MonoBehaviour
     {
         if (cooldownActive == false)
         {
-            anim.SetTrigger("ActivateTrap");    // Activate the trap
-            timer = 0f;                         // Reset timer
-            button.interactable = false;        // Disable the button
-            cooldownActive = true;              // Trap needs to cooldown
+            anim.SetTrigger("ActivateTrap");            // Activate the trap
+            GetComponent<AudioSource>().clip = sound;   // Load sound
+            GetComponent<AudioSource>().Play();         // Play sound
+            timer = 0f;                                 // Reset timer
+            button.interactable = false;                // Disable the button
+            cooldownActive = true;                      // Trap needs to cooldown
         }
     }
     #endregion
