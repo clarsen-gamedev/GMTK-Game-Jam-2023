@@ -222,7 +222,7 @@ public class GameManager : MonoBehaviour
         if ((runnerKillCount + runnerGoalCount) == maxRunners)
         {
             // If player killed 80%...
-            if (((runnerKillCount) / maxRunners) >= 0.8f)
+            if (((Mathf.InverseLerp(0, maxRunners, runnerKillCount)) >= 0.8f))
             {
                 UISwitch(UIScreens.VICTORY);    // Swap to victory screen
             }
