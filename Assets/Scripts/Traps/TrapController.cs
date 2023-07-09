@@ -63,5 +63,7 @@ public class TrapController : MonoBehaviour
             cooldownActive = true;                      // Trap needs to cooldown
         }
     }
+
+
     #endregion
 }

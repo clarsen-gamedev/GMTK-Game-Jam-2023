@@ -238,7 +238,7 @@ public class GameManager : MonoBehaviour
     // Updates the runner spawn count UI
     public void UpdateRunnerSpawnCount()
     {
-        runnerCountUI.text = "Runners Left: " + runnerCount;
+        runnerCountUI.text = " " + runnerCount + " ";
     }
 
     // Updates the runner kill count UI
