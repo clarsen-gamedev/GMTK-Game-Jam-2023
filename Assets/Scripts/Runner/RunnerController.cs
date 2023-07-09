@@ -13,6 +13,7 @@ public class RunnerController : MonoBehaviour
     #region Public and Serialized Variables
     public bool isDead;             // If the runner is dead
     [SerializeField] Animator anim; // Reference to the animator for the sprite
+    [SerializeField] AudioClip death;
     #endregion
 
     #region Private Variables
@@ -89,6 +90,8 @@ public class RunnerController : MonoBehaviour
         else if (collision.tag == "Hazard")
         {
             GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<AudioSource>().clip = death;
+            GetComponent<AudioSource>().Play();
             anim.SetTrigger("Death");
             gameManager.runnerKillCount++;
             gameManager.UpdateRunnerKillCount();
