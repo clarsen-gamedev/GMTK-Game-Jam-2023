@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         // Initialize variables
-        speed = 10f;
+        speed = 20f;
     }
 
     // Update is called once per frame

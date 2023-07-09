@@ -49,13 +49,20 @@ MonoBehaviour:
   trapSelect: {fileID: 8300000, guid: a88b954f97977f24185f76930336aa60, type: 3}
   pauseGame: {fileID: 8300000, guid: a88b954f97977f24185f76930336aa60, type: 3}
   pauseButton: 27
-  runnerCount: 100
+  maxRunners: 10
   gameplayUI: {fileID: 0}
   pauseUI: {fileID: 0}
   gameOverUI: {fileID: 0}
   victoryUI: {fileID: 0}
   runnerCountUI: {fileID: 0}
+  runnerKillsUI: {fileID: 0}
+  runnerGoalsUI: {fileID: 0}
+  gameOverMessage: {fileID: 0}
+  victoryMessage: {fileID: 0}
   currentScreen: 0
+  runnerCount: 100
+  runnerKillCount: 0
+  runnerGoalCount: 0
 --- !u!82 &172700695323700849
 AudioSource:
   m_ObjectHideFlags: 0

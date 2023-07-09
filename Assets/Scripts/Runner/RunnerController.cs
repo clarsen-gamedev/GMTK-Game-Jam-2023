@@ -82,6 +82,7 @@ public class RunnerController : MonoBehaviour
             Destroy(gameObject);
             gameManager.runnerGoalCount++;
             gameManager.UpdateRunnerGoalCount();
+            gameManager.CheckCompletion();
         }
 
         // If a runner hits a hazard...
@@ -91,6 +92,7 @@ public class RunnerController : MonoBehaviour
             anim.SetTrigger("Death");
             gameManager.runnerKillCount++;
             gameManager.UpdateRunnerKillCount();
+            gameManager.CheckCompletion();
         }
 
         // If a runner hits a jump trigger

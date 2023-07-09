@@ -193,7 +193,7 @@ public class GameManager : MonoBehaviour
             currentScreen = UIScreens.GAMEOVER;
 
             // Print the goober message
-            gameOverMessage.text = "You failed to kill at least 80% of the goobers!\r\n\r\nYou killed " + runnerKillCount + " goobers (" + ((runnerKillCount/maxRunners) * 100) +"%)";
+            gameOverMessage.text = "You failed to kill at least 80% of the goobers!\r\n\r\nYou killed " + runnerKillCount + " goobers (" + Mathf.InverseLerp(0, maxRunners, runnerKillCount) * 100 +"%)";
         }
 
         // If the victory screen is selected...
@@ -209,57 +209,48 @@ public class GameManager : MonoBehaviour
 
             // Set currentScreen to the selected screen
             currentScreen = UIScreens.VICTORY;
+
+            // Print the goober message
+            victoryMessage.text = "You managed to kill at least 80% of the goobers!\r\n\r\nYou killed " + runnerKillCount + " goobers (" + Mathf.InverseLerp(0, maxRunners, runnerKillCount) * 100 + "%)";
+        }
+    }
+
+    // Checks if all runners have completed
+    public void CheckCompletion()
+    {
+        // Check if last runner
+        if ((runnerKillCount + runnerGoalCount) == maxRunners)
+        {
+            // If player killed 80%...
+            if (((runnerKillCount) / maxRunners) >= 0.8f)
+            {
+                UISwitch(UIScreens.VICTORY);    // Swap to victory screen
+            }
+            else
+            {
+                UISwitch(UIScreens.GAMEOVER);   // Swap to game over screen
+            }
+
+            Time.timeScale = 0f;
         }
     }
 
     // Updates the runner spawn count UI
     public void UpdateRunnerSpawnCount()
     {
-        runnerCountUI.text = "Runners Left: " + maxRunners;
+        runnerCountUI.text = "Runners Left: " + runnerCount;
     }
 
     // Updates the runner kill count UI
     public void UpdateRunnerKillCount()
     {
         runnerKillsUI.text = "Runners Killed: " + runnerKillCount;
-
-        // Check if last runner
-        if ((runnerKillCount + runnerGoalCount) == maxRunners)
-        {
-            // If player killed 80%...
-            if (((runnerKillCount) /maxRunners) >= 0.8f)
-            {
-                UISwitch(UIScreens.GAMEOVER);    // Swap to victory screen
-            }
-            else
-            {
-                UISwitch(UIScreens.GAMEOVER);   // Swap to game over screen
-            }
-
-            Time.timeScale = 0f;
-        }
     }
 
     // Updates the runner goal count UI
     public void UpdateRunnerGoalCount()
     {
         runnerGoalsUI.text = "Runners Escaped: " + runnerGoalCount;
-
-        // Check if last runner
-        if ((runnerKillCount + runnerGoalCount) == maxRunners)
-        {
-            // If player killed 80%...
-            if ((runnerKillCount / maxRunners) >= 0.8f)
-            {
-                UISwitch(UIScreens.GAMEOVER);    // Swap to victory screen
-            }
-            else
-            {
-                UISwitch(UIScreens.GAMEOVER);   // Swap to game over screen
-            }
-
-            Time.timeScale = 0f;
-        }
     }
     #endregion
 }
